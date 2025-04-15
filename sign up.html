@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire GitLab</title>
+  <link rel="stylesheet" href="styles.css.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="logo">
+        <img src="https://about.gitlab.com/images/press/logo/svg/gitlab-icon-rgb.svg" alt="Logo GitLab" width="">
+        <h1>GitLab.com</h1>
+    </div>
+    <form>
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom">
+
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom">
+
+      <label for="username">Nom d'utilisateur</label>
+      <input type="text" id="username" name="username">
+
+      <label for="email">Courriel</label>
+      <input type="email" id="email" name="email">
+      <div class="info">Nous recommandons une adresse de courriel professionnelle.</div>
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password">
+      <ul class="info">
+        <li>Doit comporter entre 8 et 128 caractères</li>
+        <li>Impossible d'utiliser des expressions courantes (par exemple « mot de passe »)</li> 
+        <li>Ne peut pas inclure votre nom, nom d'utilisateur ou courriel</li>
+      </ul>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" checked>
+          J'accepte que GitLab me contacte par courriel ou par téléphone au sujet de ses produits, services ou événements.
+        </label>
+      </div>
+
+      <div class="terms">
+        En cliquant sur Continuer ou en vous inscrivant via un service tiers, vous acceptez les
+        <a href="#">Conditions d'utilisation</a> et reconnaissez avoir pris connaissance de la
+        <a href="#">Politique de confidentialité</a> et de la
+        <a href="#">Politique en matière de cookies</a> de GitLab.
+      </div>
+
+      <button type="submit" class="submit-btn">Continuer</button>
+    </form>
+  </div>
+</body>
+</html>
